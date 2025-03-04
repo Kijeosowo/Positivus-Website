@@ -8,24 +8,25 @@ const Casestudies = () => {
       paragraph:
         "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
       link: "Learn more",
-      path: "/case-study/restaurant",
+      path: "/blog",
     },
     {
       paragraph:
         "For a B2B software company, we developed an SEO strategy that resulted in a first-page ranking for key keywords and a 200% increase in organic traffic.",
       link: "Learn more",
-      path: "/case-study/b2b-software",
+      path: "/blog",
     },
     {
       paragraph:
         "For an e-commerce brand, we boosted customer engagement with social media campaigns, increasing sales by 150% within three months.",
       link: "Learn more",
-      path: "/case-study/ecommerce",
+      path: "/blog",
     },
   ];
 
   return (
     <div className="p-5 md:p-10 mt-10">
+      
       {/* Header Section */}
       <motion.div
         className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-10 text-center md:text-left"

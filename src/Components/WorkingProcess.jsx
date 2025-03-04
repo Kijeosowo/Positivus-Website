@@ -5,7 +5,6 @@ import Faqs from "./Faqs";
 const WorkingProcess = () => {
   return (
     <div className="p-5 md:p-10 mt-10">
-      {/* Header Section with Animation */}
       <motion.div
         className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-10"
         initial={{ opacity: 0, y: 50 }}
@@ -20,7 +19,6 @@ const WorkingProcess = () => {
         </p>
       </motion.div>
 
-      {/* FAQ Section with Animation */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

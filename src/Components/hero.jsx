@@ -24,7 +24,7 @@ const hero = () => {
       </div>
       <hr className="ml-20 mr-20" />
 
-      <div className="mt-10 ml-[10%] mr-[10%]">
+      <div className="mt-10 lg:ml-[10%] lg:mr-[10%] ml-5 mr-5">
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

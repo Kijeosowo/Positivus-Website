@@ -49,7 +49,6 @@ const Faqs = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Animation Variants
   const fadeInLeft = {
     hidden: { opacity: 0, x: -50 },
     visible: (delay) => ({
@@ -69,7 +68,7 @@ const Faqs = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInLeft}
-          custom={index * 0.2} // Stagger effect
+          custom={index * 0.2}
         >
           <div
             className="flex justify-between items-center cursor-pointer p-10"

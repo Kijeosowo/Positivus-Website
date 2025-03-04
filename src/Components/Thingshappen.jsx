@@ -7,15 +7,15 @@ const Thingshappen = () => {
   return (
     <section className="p-5 md:p-10">
       <motion.div
-        className="bg-[#F3F3F3] rounded-[30px] flex flex-col md:flex-row justify-around items-center gap-10 p-10 md:p-16"
-        initial={{ opacity: 0, y: 50 }} // Fade in and slide up
+        className="bg-[#F3F3F3] rounded-[30px] flex flex-col md:flex-row justify-around items-center lg:gap-10 gap-20 p-10 md:p-16"
+        initial={{ opacity: 0, y: 50 }} 
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}>
-        {/* Text Section */}
+        
         <motion.div
           className="flex flex-col gap-4 text-center md:text-left"
-          initial={{ opacity: 0, x: -50 }} // Slide in from left
+          initial={{ opacity: 0, x: -50 }} 
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}>
@@ -31,10 +31,10 @@ const Thingshappen = () => {
           </p>
           <div className="mt-5">
             <motion.div
-              whileHover={{ scale: 1.05 }} // Button hover effect
+              whileHover={{ scale: 1.05 }} 
               transition={{ duration: 0.3 }}>
               <Link
-                to=""
+                to="/pricing"
                 className="border py-3 px-6 rounded-[10px] bg-[#191A23] text-white text-sm md:text-base hover:bg-[#333] transition duration-300">
                 Get Your Free Proposal
               </Link>
@@ -42,12 +42,12 @@ const Thingshappen = () => {
           </div>
         </motion.div>
 
-        {/* Image Section */}
+   
         <motion.img
           src={Thirdsecimg}
           className="w-full md:w-[50%] lg:w-[40%] max-w-[400px] transition duration-300 ease-in-out"
           alt="Things Happen"
-          initial={{ opacity: 0, x: 50 }} // Slide in from right
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}

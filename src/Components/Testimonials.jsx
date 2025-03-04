@@ -40,7 +40,6 @@ const Testimonials = () => {
         </p>
       </div>
 
-      {/* Swipeable Testimonials */}
       <div
         className="mt-10 overflow-x-auto no-scrollbar flex lg:gap-6 p-20 bg-[#191A23] rounded-[30px]"
         ref={scrollRef}
@@ -48,7 +47,7 @@ const Testimonials = () => {
         {testifys.map((testify, index) => (
           <div
             key={index}
-            className="min-w-[250px] md:min-w-[300px] flex-shrink-0">
+            className="md:min-w-[300px] flex-shrink-0">
             <img
               src={testify.image}
               alt="Testimonials"

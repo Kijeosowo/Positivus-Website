@@ -47,7 +47,7 @@ const Secondsec = () => {
   return (
     <motion.div
       className="p-5 md:p-10 mt-10"
-      initial={{ opacity: 0, y: 50 }} // Fade in and slide up
+      initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}>
@@ -80,7 +80,7 @@ const Secondsec = () => {
               className={`group inline-flex gap-20 p-10 border border-b-5 rounded-[30px] ${
                 colors[index % colors.length]
               } cursor-pointer hover:shadow-lg transition-all duration-300`}
-              initial={{ opacity: 0, y: 50 }} // Fade in and slide up
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.6,
@@ -88,13 +88,13 @@ const Secondsec = () => {
                 delay: index * 0.2,
               }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }} // Subtle hover effect
+              whileHover={{ scale: 1.05 }}
             >
               <div className="flex flex-col gap-32">
                 <p className="text-lg bg-white rounded p-2 font-semibold lg:max-w-48 max-w-full">
                   {box.paragraph}
                 </p>
-                <Link to="#" className="flex items-center gap-2 text-[#191A23]">
+                <Link to="/services" className="flex items-center gap-2 text-[#191A23]">
                   <BsArrowUpRightCircleFill />
                   {box.link}
                 </Link>
@@ -103,8 +103,8 @@ const Secondsec = () => {
                 <motion.img
                   src={box.image}
                   alt="Illustration"
-                  className="w-56 h-48 transform transition-transform duration-300 group-hover:scale-110"
-                  initial={{ opacity: 0, scale: 0.8 }} // Fade in with zoom effect
+                  className="lg:w-56 lg:h-48 transform transition-transform duration-300 group-hover:scale-110"
+                  initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.6,

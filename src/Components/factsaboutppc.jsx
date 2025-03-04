@@ -15,6 +15,7 @@ const FactsAboutPPC = () => {
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5
         max-w-screen-lg mx-auto">
+
         {/* Fact 1 */}
         <motion.div
           initial="hidden"
@@ -28,6 +29,7 @@ const FactsAboutPPC = () => {
           </h1>
           <p>on PPC advertising</p>
         </motion.div>
+
         {/* Fact 2 */}
         <motion.div initial="hidden"
         whileInView="visible"
@@ -39,6 +41,7 @@ const FactsAboutPPC = () => {
             importance of ranking highly.
           </p>
         </motion.div>
+
         {/* Fact 3 */}
         <motion.div initial="hidden"
         whileInView="visible"
@@ -57,6 +60,7 @@ const FactsAboutPPC = () => {
             </span>
           </p>
         </motion.div>
+        
         {/* Fact 4 */}
         <motion.div initial="hidden"
         whileInView="visible"

@@ -54,7 +54,6 @@ const Team = () => {
     },
   ];
 
-  // Animation Variants
   const popIn = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: (delay) => ({
@@ -68,10 +67,10 @@ const Team = () => {
     <div className="p-5 md:p-10 mt-10">
       <motion.div
         className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-10"
-        initial={{ x: -50, opacity: 0 }} // Start off-screen left
-        whileInView={{ x: 0, opacity: 1 }} // Animate to normal position
+        initial={{ x: -50, opacity: 0 }} 
+        whileInView={{ x: 0, opacity: 1 }} 
         transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }} // Animates only once
+        viewport={{ once: true }} 
       >
         <h1 className="bg-[#191A23] rounded text-lg text-center px-4 py-2 text-white">
           Team
@@ -82,7 +81,6 @@ const Team = () => {
         </p>
       </motion.div>
 
-      {/* Team Grid with Pop-In Animation */}
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 mt-20 lg:mx-20 mx-5">
         {teams.map((team, index) => (
           <motion.div
@@ -92,7 +90,7 @@ const Team = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={popIn}
-            custom={index * 0.2} // Stagger effect for popping one after another
+            custom={index * 0.2}
           >
             <div className="flex flex-col gap-5 border border-b-5 bg-white p-10 rounded-[30px] shadow-lg">
               <div className="flex justify-around items-center">

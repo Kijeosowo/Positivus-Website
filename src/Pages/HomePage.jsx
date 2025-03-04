@@ -16,10 +16,9 @@ const HomePage = () => {
     <section>
       <div className="flex flex-col md:flex-row justify-between items-center mt-10 lg:px-48 px-0">
         <motion.div
-          initial={{ opacity: 0, y: 50 }} // Start position (hidden & moved down)
-          whileInView={{ opacity: 1, y: 0 }} // Animate to visible state
-          transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
-          viewport={{ once: true }} // Animates only once
+          initial={{ opacity: 0, y: 50 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-5xl text-center md:text-left">
             Navigating the <br /> digital landscape <br /> for success.
@@ -31,7 +30,7 @@ const HomePage = () => {
           </p>
           <div className="mt-5 flex justify-center md:justify-start">
             <Link
-              to=""
+              to="/blog"
               className="pt-3 pb-3 pl-7 pr-7 rounded-[10px] bg-[#191A23] text-white hover:text-[#191A23] hover:bg-white hover:border transition ease-in-out duration-300">
               Book a consultation
             </Link>

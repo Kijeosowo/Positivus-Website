@@ -9,7 +9,6 @@ const UseCasePage = () => {
   return (
     <section>
       <div className="px-5 md:px-10">
-        {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,12 +43,10 @@ const UseCasePage = () => {
           </motion.div>
         </motion.div>
 
-        {/* Featured Success & Things Happen Sections */}
         <Featuredsuccess />
         <Thingshappen />
-
-        {/* Footer */}
       </div>
+
       <Footer />
     </section>
   );

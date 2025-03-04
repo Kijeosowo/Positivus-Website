@@ -2,7 +2,6 @@ import "react";
 import { Link } from "react-router";
 import { FaCircleCheck } from "react-icons/fa6";
 
-// ✅ Reusable Pricing Card Component
 const PricingCard = ({ title, price, features, isPopular, bgColor }) => (
   <div
     className={`border border-b-5 hover:border-t-5 hover:border-b-1 flex flex-col gap-5 p-7 rounded-[20px] 

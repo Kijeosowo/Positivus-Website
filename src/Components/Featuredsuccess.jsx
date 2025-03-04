@@ -34,6 +34,7 @@ const Featuredsuccess = () => {
 
   return (
     <div className="md:px-10">
+      
       {/* Featured Story Section */}
       <div className="mt-20 bg-[#191A23] flex flex-col md:flex-row justify-between items-center p-10 md:p-20 rounded-[30px] gap-10">
         {/* Left Content */}
@@ -61,17 +62,14 @@ const Featuredsuccess = () => {
             e-commerce brand increase visibility, drive traffic, and boost
             sales.
           </motion.p>
-          <motion.Link
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 1 }}
-            to=""
+          <Link
+            to="/blog"
             className="flex gap-2 text-[#B9FF66] justify-center md:justify-start">
             <BsArrowUpRightCircleFill className="mt-1" /> Read
-          </motion.Link>
+          </Link>
         </aside>
 
-        {/* Right Content (Stats) */}
+        {/* Right Content */}
         <aside className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-4 gap-5">
           {[
             { value: "200%", text: "increase in organic traffic" },
@@ -113,7 +111,7 @@ const Featuredsuccess = () => {
           </p>
         </motion.div>
 
-        {/* Success Stories Grid */}
+        {/* Success Stories */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {successStories.map((story, index) => (
             <motion.div
@@ -131,7 +129,7 @@ const Featuredsuccess = () => {
                 {story.description}
               </p>
               <Link
-                to=""
+                to="/blog"
                 className="flex gap-2 text-[#191A23] group-hover:text-white mt-2">
                 <BsArrowUpRightCircleFill className="mt-1" /> Learn more
               </Link>

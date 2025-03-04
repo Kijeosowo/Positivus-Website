@@ -3,18 +3,17 @@ import LandingImage from "../images/thirdsec.png";
 import { easeOut, motion } from "framer-motion";
 
 const ImpactNumbers = () => {
-  // Animation Variants
   const popIn = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: (delay) => ({
+    visible: () => ({
       opacity: 1,
       scale: 1,
-      transition: { duration: 2, delay, ease: "easeOut" },
+      transition: { duration: 2, ease: "easeOut" },
     }),
   };
   return (
     <div className="p-5 md:p-10">
-      {/* Impact Header */}
+  
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -32,8 +31,7 @@ const ImpactNumbers = () => {
         </div>
       </motion.div>
 
-      {/* Numbers Section */}
-      <div className="mt-10 flex flex-wrap justify-center gap-5">
+      <div className="flex flex-wrap justify-center gap-5">
         {[
           { number: "8+", label: "Years of experience" },
           { number: "50+", label: "Experts" },
@@ -43,7 +41,7 @@ const ImpactNumbers = () => {
         ].map((item, index) => (
           <motion.div
             key={index}
-            className="group"
+            className="group mt-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -57,7 +55,6 @@ const ImpactNumbers = () => {
         ))}
       </div>
 
-      {/* Core Values Header */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -72,7 +69,8 @@ const ImpactNumbers = () => {
           are our core values.
         </p>
       </motion.div>
-      {/* Core Values Grid */}
+      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
         {[
           "Client Success First",
@@ -82,7 +80,7 @@ const ImpactNumbers = () => {
         ].map((value, index) => (
           <div
             key={index}
-            className="flex flex-col gap-3 border border-b-4 rounded-[20px] p-20 group hover:bg-[#191A23] transition ease-in-out duration-300">
+            className="flex flex-col gap-3 border border-b-4 rounded-[20px] lg:p-20 p-10 group hover:bg-[#191A23] transition ease-in-out duration-300">
             <h1 className="text-xl font-semibold group-hover:text-white">
               {value}
             </h1>
@@ -95,21 +93,21 @@ const ImpactNumbers = () => {
           </div>
         ))}
       </div>
-      {/* Quote Section */}
+      
       <div className="flex flex-col md:flex-row bg-[#191A23] rounded-[30px] justify-center items-center mt-20 p-20 gap-10">
         <div className="w-full md:w-[40%] flex justify-center">
           <motion.img
-            initial={{ opacity: 0, x: 50 }} // Slide in from right
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             viewport={{ once: true }}
             src={LandingImage}
             alt="Landing"
-            className="w-[80%] md:w-[90%] max-w-[300px]"></motion.img>
+            className="w-full md:w-[90%] max-w-[300px]"></motion.img>
         </div>
-        <div className="flex flex-col gap-5 text-center md:text-left text-white">
           <motion.div
-            initial={{ opacity: 0, x: -50 }} // Slide in from right
+            className="flex flex-col gap-10 text-center md:text-left text-white"
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
             viewport={{ once: true }}>
@@ -122,7 +120,6 @@ const ImpactNumbers = () => {
             </h1>
             <p className="text-sm">~ Michael Smith, Founder of Positivus</p>
           </motion.div>
-        </div>
       </div>
     </div>
   );

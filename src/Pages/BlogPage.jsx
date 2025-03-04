@@ -16,7 +16,7 @@ const BlogPage = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           className="w-full">
-          <img src={LandingImage} alt="landing image" className="w-[40%]" />
+          <img src={LandingImage} alt="landing image" />
         </motion.div>
 
         <motion.div

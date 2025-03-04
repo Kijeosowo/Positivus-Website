@@ -37,13 +37,13 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-3 text-white text-xl">
-            <Link to="">
+            <Link to="/">
               <FaLinkedinIn />
             </Link>
-            <Link to="">
+            <Link to="/">
               <FaFacebookF />
             </Link>
-            <Link to="">
+            <Link to="/">
               <FaTwitter />
             </Link>
           </div>

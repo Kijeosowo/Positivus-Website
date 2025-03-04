@@ -79,7 +79,7 @@ const ServicesPage = () => {
               corporis voluptas sit tenetur quaerat quia corrupti?
             </p>
             <Link
-              to=""
+              to="/pricing"
               className="text-center bg-white text-[#191A23] rounded p-3 transition duration-300 hover:bg-[#191A23] hover:text-white hover:border hover:border-white">
               Boost my Rankings
             </Link>

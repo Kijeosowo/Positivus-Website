@@ -54,7 +54,7 @@ const HowWeWork = () => {
 
   return (
     <section className="mt-20 p-5 md:p-10">
-      {/* Header */}
+
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +70,6 @@ const HowWeWork = () => {
         </p>
       </motion.div>
 
-      {/* Steps Grid */}
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
         {processes.map((process, index) => (
           <motion.div
@@ -112,21 +111,21 @@ const HowWeWork = () => {
             the next level.
           </p>
           <Link
-            to=""
+            to="/pricing"
             className="text-center bg-[#191A23] text-[#fff] rounded p-3 transition duration-300 hover:bg-[#fff] hover:text-[#191A23] hover:border hover:border-[#191A23]">
             Boost my Rankings
           </Link>
         </motion.div>
 
-        {/* Image */}
-        <div className="w-full md:w-1/3">
+        <div className="">
           <motion.img
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
             src={Ai}
             alt="AI"
-            className="w-[100%] mx-auto transition-transform duration-300 group-hover:scale-110"></motion.img>
+            className="w-[100%] mx-auto transition-transform duration-300 group-hover:scale-110">
+            </motion.img>
         </div>
       </div>
     </section>

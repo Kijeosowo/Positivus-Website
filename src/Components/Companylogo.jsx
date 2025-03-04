@@ -11,7 +11,7 @@ const logos = [amazon, dribbble, hubspot, notion, netflix, zoom];
 
 const CompanyLogo = () => {
   return (
-    <div className="overflow-hidden w-full bg-white py-5">
+    <div className="overflow-hidden w-full bg-white mt-20 mb-20">
       <motion.div
         className="flex w-max"
         animate={{ x: [0, -1000] }}

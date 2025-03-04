@@ -17,11 +17,6 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 text-sm">
-          {/* <Link
-            className="hover:text-white hover:bg-[#191A23] hover:rounded p-3 transition"
-            to="/">
-            Home
-          </Link> */}
           <Link
             className="hover:text-white hover:bg-[#191A23] hover:rounded p-3 transition"
             to="/about">
@@ -50,7 +45,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block bg-black text-white py-2 px-5 rounded-lg hover:bg-white hover:text-black border transition">
-          <Link to="">Request a Demo</Link>
+          <Link to="/pricing">Request a Demo</Link>
         </div>
 
         {/* Hamburger Menu Button */}
