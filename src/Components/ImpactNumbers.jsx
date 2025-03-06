@@ -12,8 +12,7 @@ const ImpactNumbers = () => {
     }),
   };
   return (
-    <div className="p-5 md:p-10">
-  
+    <div className="mt-10 md:p-10">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -69,7 +68,6 @@ const ImpactNumbers = () => {
           are our core values.
         </p>
       </motion.div>
-      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
         {[
@@ -93,7 +91,7 @@ const ImpactNumbers = () => {
           </div>
         ))}
       </div>
-      
+
       <div className="flex flex-col md:flex-row bg-[#191A23] rounded-[30px] justify-center items-center mt-20 p-20 gap-10">
         <div className="w-full md:w-[40%] flex justify-center">
           <motion.img
@@ -105,21 +103,21 @@ const ImpactNumbers = () => {
             alt="Landing"
             className="w-full md:w-[90%] max-w-[300px]"></motion.img>
         </div>
-          <motion.div
-            className="flex flex-col gap-10 text-center md:text-left text-white"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            viewport={{ once: true }}>
-            <h1 className="text-2xl md:text-4xl">
-              At Positivus, we believe that <br className="hidden md:block" />
-              success is built on <br className="hidden md:block" />
-              innovation, collaboration, <br className="hidden md:block" />
-              and a relentless focus on <br className="hidden md:block" />
-              delivering results.
-            </h1>
-            <p className="text-sm">~ Michael Smith, Founder of Positivus</p>
-          </motion.div>
+        <motion.div
+          className="flex flex-col gap-10 text-center md:text-left text-white"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: true }}>
+          <h1 className="text-2xl md:text-4xl">
+            At Positivus, we believe that <br className="hidden md:block" />
+            success is built on <br className="hidden md:block" />
+            innovation, collaboration, <br className="hidden md:block" />
+            and a relentless focus on <br className="hidden md:block" />
+            delivering results.
+          </h1>
+          <p className="text-sm">~ Michael Smith, Founder of Positivus</p>
+        </motion.div>
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto mt-10 p-5">
+    <div className="max-w-4xl mx-auto mt-10">
       {faqs.map((faq, index) => (
         <motion.div
           key={index}
@@ -68,8 +68,7 @@ const Faqs = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInLeft}
-          custom={index * 0.2}
-        >
+          custom={index * 0.2}>
           <div
             className="flex justify-between items-center cursor-pointer p-10"
             onClick={() => toggleFAQ(index)}>
@@ -85,12 +84,7 @@ const Faqs = () => {
           </div>
 
           {openIndex === index && (
-            <motion.div
-              className="text-sm p-5 md:p-7 text-gray-700 bg-[#B9FF66] rounded-b-2xl"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.4 }}>
+            <motion.div className="text-sm p-5 md:p-7 text-gray-700 bg-[#B9FF66] rounded-b-2xl">
               {faq.answer}
             </motion.div>
           )}

@@ -7,7 +7,7 @@ import Footer from "./Footer";
 const hero = () => {
   return (
     <section className="">
-      <div className="flex justify-between items-center mt-20 ml-20 mr-20 pb-3">
+      <div className="flex justify-between items-center mt-20 lg:ml-20 lg:mr-20 ml-5 mr-5 pb-3">
         <div className="flex items-center gap-3">
           <img src={sarah} alt="Sarah kim" className="w-18" />
           <div className="flex flex-col">
@@ -22,7 +22,7 @@ const hero = () => {
           <p className="text-gray-300 text-3xl">A</p>
         </div>
       </div>
-      <hr className="ml-20 mr-20" />
+      <hr className="lg:ml-20 lg:mr-20 ml-5 mr-5" />
 
       <div className="mt-10 lg:ml-[10%] lg:mr-[10%] ml-5 mr-5">
         <motion.p

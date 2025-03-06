@@ -24,7 +24,7 @@ const PricingPage = () => {
             Frequently Asked Questions
           </h1>
 
-          <div className="mt-10 mx-auto w-full max-w-4xl px-5">
+          <div>
             <Faqs />
           </div>
         </div>

@@ -46,7 +46,7 @@ const Secondsec = () => {
 
   return (
     <motion.div
-      className="p-5 md:p-10 mt-10"
+      className="p-2 md:p-10 mt-10"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -73,7 +73,7 @@ const Secondsec = () => {
       </div>
 
       <div className="flex justify-center mt-20">
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 px-">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           {boxes.map((box, index) => (
             <motion.div
               key={index}
@@ -90,11 +90,11 @@ const Secondsec = () => {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="flex flex-col gap-32">
-                <p className="text-lg bg-white rounded p-2 font-semibold lg:max-w-48 max-w-full">
+              <div className="flex flex-col justify-between gap-32">
+                <p className="text-lg bg-white rounded p-2 font-semibold">
                   {box.paragraph}
                 </p>
-                <Link to="/services" className="flex items-center gap-2 text-[#191A23]">
+                <Link to="/services" className="flex items-center gap-2 text text-base text-[#191A23]">
                   <BsArrowUpRightCircleFill />
                   {box.link}
                 </Link>
@@ -103,7 +103,7 @@ const Secondsec = () => {
                 <motion.img
                   src={box.image}
                   alt="Illustration"
-                  className="lg:w-56 lg:h-48 transform transition-transform duration-300 group-hover:scale-110"
+                  className="lg:w-56 lg:h-48 w-32 transform transition-transform duration-300 group-hover:scale-110"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{

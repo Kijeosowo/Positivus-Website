@@ -81,7 +81,7 @@ const Team = () => {
         </p>
       </motion.div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 mt-20 lg:mx-20 mx-5">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 mt-20 lg:mx-20">
         {teams.map((team, index) => (
           <motion.div
             key={index}
@@ -93,10 +93,10 @@ const Team = () => {
             custom={index * 0.2}
           >
             <div className="flex flex-col gap-5 border border-b-5 bg-white p-10 rounded-[30px] shadow-lg">
-              <div className="flex justify-around items-center">
+              <div className="flex justify-around items-center gap-2">
                 <img
                   src={team.image}
-                  className="group-hover:scale-110 transition ease-in-out duration-300"
+                  className="w-[25%] group-hover:scale-110 transition ease-in-out duration-300"
                 />
                 <div>
                   <h1 className="font-semibold">{team.name}</h1>

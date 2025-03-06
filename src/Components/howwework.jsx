@@ -60,11 +60,11 @@ const HowWeWork = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: easeOut }}
         viewport={{ once: true }}
-        className="flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-10">
+        className="flex flex-col md:flex-row lg:items-start items-center md:items-center gap-5 md:gap-10">
         <h1 className="bg-[#191A23] text-white text-lg text-center px-4 py-2 rounded">
           How We Work: SEO Process
         </h1>
-        <p className="text-stone-800 text-sm md:text-base">
+        <p className="text-stone-800 text-sm lg:text-left text-center md:text-base">
           Our step-by-step SEO Process ensures your website ranks higher,
           attracts more traffic, and drives lasting results.
         </p>
@@ -74,7 +74,7 @@ const HowWeWork = () => {
         {processes.map((process, index) => (
           <motion.div
             key={index}
-            className="flex gap-5 bg-[#F3F3F3] p-8 rounded-[30px] items-center group"
+            className="flex flex-col lg:flex-row gap-5 bg-[#F3F3F3] p-8 rounded-[30px] items-center group"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -83,7 +83,7 @@ const HowWeWork = () => {
             <div className="flex items-center justify-center lg:w-20 w-20 h-20 h-10 p-5 md:w-20 md:h-20 bg-[#191A23] text-[#B9FF66] text-2xl md:text-3xl font-bold rounded-full">
               {process.number}
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col text-center lg:text-left gap-2">
               <h1 className="text-xl md:text-2xl font-semibold">
                 {process.title}
               </h1>

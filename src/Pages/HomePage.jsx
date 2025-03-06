@@ -14,7 +14,7 @@ import Footer from "../Components/Footer";
 const HomePage = () => {
   return (
     <section>
-      <div className="flex flex-col md:flex-row justify-between items-center mt-10 lg:px-48 px-0">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-10 lg:px-48">
         <motion.div
           initial={{ opacity: 0, y: 50 }} 
           whileInView={{ opacity: 1, y: 0 }} 
